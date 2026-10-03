@@ -1,0 +1,6 @@
+# Não publicar
+site-antigo/
+.claude/
+node_modules/
+Thumbs.db
+desktop.ini
