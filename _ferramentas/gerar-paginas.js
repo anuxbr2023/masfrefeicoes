@@ -346,7 +346,7 @@ write("index.html", head("MASF Refeições | Alimentação Corporativa em Manaus
         </div>
         <div class="hero__media reveal">
           <figure class="hero__photo">
-            <img src="assets/img/refeitorio-masf.jpg" alt="Linha de buffet da MASF em refeitório corporativo, com colaboradora servindo" width="2000" height="1333" fetchpriority="high">
+            <img src="assets/img/refeitorio-masf.jpg?v=2" alt="Linha de buffet da MASF em refeitório corporativo, com colaboradora servindo" width="1535" height="1024" fetchpriority="high">
           </figure>
           <div class="hero__card hero__card--iso">
             <span class="hero__card-icon">${ic("shield")}</span>
@@ -472,7 +472,7 @@ ${CAMPAIGNS.map(([icon, t, d], i) => `          <article class="campaign reveal"
 
     <section class="gallery" aria-label="Fotos da operação MASF">
       <div class="container gallery__grid">
-        <figure class="gallery__item gallery__item--wide reveal"><img src="assets/img/refeitorio-masf.jpg" alt="Refeitório atendido pela MASF" loading="lazy"></figure>
+        <figure class="gallery__item gallery__item--wide reveal"><img src="assets/img/refeitorio-masf.jpg?v=2" alt="Refeitório atendido pela MASF" loading="lazy"></figure>
         <figure class="gallery__item reveal"><img src="assets/img/temperos.jpg" alt="Bandeja de temperos e molhos no buffet" loading="lazy"></figure>
         <figure class="gallery__item reveal"><img src="assets/img/buffet-pratos.jpg" alt="Pratos quentes servidos no buffet" loading="lazy"></figure>
         <figure class="gallery__item gallery__item--wide reveal"><img src="assets/img/buffet-linha.jpg" alt="Linha de buffet completa" loading="lazy"></figure>
@@ -506,7 +506,7 @@ write("sobre.html", head("Quem somos | MASF Refeições", "Conheça a história 
           <p class="reveal">Nosso preparo é artesanal: qualidade e afeto são os principais ingredientes. Nossos profissionais garantem eficiência em produções de grande escala, sem abrir mão do sabor.</p>
         </div>
         <div class="about__media reveal">
-          <img src="assets/img/refeitorio-masf.jpg" alt="Refeitório corporativo atendido pela MASF" loading="lazy">
+          <img src="assets/img/refeitorio-masf.jpg?v=2" alt="Refeitório corporativo atendido pela MASF" loading="lazy">
           <div class="about__stamp"><span>Fundada em</span><strong>21.12.2004</strong></div>
         </div>
       </div>
