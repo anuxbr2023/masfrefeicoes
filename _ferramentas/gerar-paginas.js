@@ -110,7 +110,16 @@ const head = (title, desc, page) => `<!doctype html>
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${desc}">
-  <meta property="og:image" content="https://masfrefeicoes.com.br/assets/img/refeitorio-masf.jpg">
+  <meta property="og:site_name" content="MASF Refeições">
+  <meta property="og:url" content="https://masfrefeicoes.com.br/${page === "index.html" ? "" : page}">
+  <meta property="og:image" content="https://masfrefeicoes.com.br/assets/img/og-masf.jpg">
+  <meta property="og:image:secure_url" content="https://masfrefeicoes.com.br/assets/img/og-masf.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MASF Refeições — Nutrição com qualidade. Alimentação corporativa para a indústria de Manaus.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://masfrefeicoes.com.br/assets/img/og-masf.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
