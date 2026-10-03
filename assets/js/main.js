@@ -12,7 +12,7 @@ const CONFIG = {
   // E-mail que recebe as propostas do formulário (envio direto, via FormSubmit)
   formEmail: "comercial@masfrefeicoes.com.br",
   email: "comercial@masfrefeicoes.com.br",
-  address: "Rua Candelária, 200 – Armando Mendes, Manaus-AM",
+  address: "Rua Candelária, 200 – Coroado, Manaus-AM",
   instagram: "https://www.instagram.com/masfrefeicoesam/",
   instagramHandle: "@masfrefeicoesam",
   cnpj: "", // ex.: "CNPJ 00.000.000/0001-00" (vazio = oculto)

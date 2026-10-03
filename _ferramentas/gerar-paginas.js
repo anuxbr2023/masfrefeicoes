@@ -261,7 +261,7 @@ const footer = () => `  </main>
         <ul>
           <li><span class="phone-list" data-phone-list>(92) 99136-0733</span></li>
           <li><a href="#" data-email-link><span data-email-label>comercial@masfrefeicoes.com.br</span></a></li>
-          <li><span data-address-label>Rua Candelária, 200 – Armando Mendes, Manaus-AM</span></li>
+          <li><span data-address-label>Rua Candelária, 200 – Coroado, Manaus-AM</span></li>
         </ul>
       </div>
     </div>
@@ -860,7 +860,7 @@ write("contato.html", head("Contato | MASF Refeições", "Solicite uma proposta 
           <ul class="contact__list reveal">
             <li><span class="contact__icon">${ic("phone")}</span><div><small>Telefone / WhatsApp</small><span class="phone-list" data-phone-list>(92) 99136-0733</span></div></li>
             <li><span class="contact__icon">${ic("mail")}</span><div><small>E-mail</small><a href="#" data-email-link><span data-email-label>comercial@masfrefeicoes.com.br</span></a></div></li>
-            <li><span class="contact__icon">${ic("pin")}</span><div><small>Sede operacional</small><span data-address-label>Rua Candelária, 200 – Armando Mendes, Manaus-AM</span></div></li>
+            <li><span class="contact__icon">${ic("pin")}</span><div><small>Sede operacional</small><span data-address-label>Rua Candelária, 200 – Coroado, Manaus-AM</span></div></li>
             <li><span class="contact__icon">${ic("clock")}</span><div><small>Atendimento comercial</small><span>Segunda a sexta, em horário comercial</span></div></li>
           </ul>
           <a href="#" data-whatsapp-link target="_blank" rel="noopener" class="btn btn--primary btn--lg btn--block reveal">${ic("wa")} Chamar no WhatsApp</a>
@@ -912,7 +912,7 @@ ${SERVICES.map(([, t]) => `                <option>${t}</option>`).join("\n")}
     <section class="map-sec">
       <div class="container">
         <div class="map reveal">
-          <iframe title="Mapa da sede da MASF Refeições" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua+Candel%C3%A1ria,+200+-+Armando+Mendes,+Manaus+-+AM&output=embed"></iframe>
+          <iframe title="Mapa da sede da MASF Refeições" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua+Candel%C3%A1ria,+200+-+Coroado,+Manaus+-+AM&output=embed"></iframe>
         </div>
       </div>
     </section>
