@@ -59,6 +59,7 @@ const CLIENTS = [
   ["tectoy", "Tectoy"], ["transire", "Transire"], ["positron", "Positron Stoneridge"], ["inventus", "Inventus Power"],
   ["armor", "Armor IIMAK"], ["fermazon", "Fermazon"], ["livoltek", "Livoltek"], ["tema", "Tema"], ["elcoa", "Elcoa"],
   ["eternal", "Eternal"], ["mm", "MM da Amazônia"], ["callidus", "Callidus"], ["alya", "Alya"],
+  ["totalblind", "TotalBlind"], ["lavaeleva", "Lavanderia Lava &amp; Leva — Eliza Mall"],
 ];
 
 const SERVICES = [
@@ -198,12 +199,12 @@ const clientsCarousel = (title = "Empresas que confiam na MASF", showLink = true
           <p class="reveal">Indústrias do Polo Industrial e empresas de Manaus que confiam à MASF a alimentação das suas equipes, todos os dias.</p>
         </div>
         <div class="clients__stat reveal">
-          <strong>+<span data-count="13">13</span></strong>
+          <strong>+<span data-count="15">15</span></strong>
           <span>empresas parceiras<br>em Manaus-AM</span>
           ${showLink ? `<a href="clientes.html" class="link">Ver todos os clientes</a>` : ""}
         </div>
       </div>
-      <div class="clients__rows">${clientRow(CLIENTS.slice(0, 7), -1)}${clientRow(CLIENTS.slice(7), 1)}
+      <div class="clients__rows">${clientRow(CLIENTS.slice(0, 8), -1)}${clientRow(CLIENTS.slice(8), 1)}
       </div>
     </section>
 `;
@@ -587,7 +588,7 @@ ${SHOW_LEADER ? `    <section class="section leader">
         <div class="numbers__item reveal"><strong><span data-count="2004">2004</span></strong><span>Ano de fundação, em Manaus</span></div>
         <div class="numbers__item reveal"><strong>+<span data-count="20">20</span> anos</strong><span>De experiência em alimentação coletiva</span></div>
         <div class="numbers__item reveal"><strong>ISO 9001</strong><span>Sistema de gestão da qualidade certificado</span></div>
-        <div class="numbers__item reveal"><strong>+<span data-count="13">13</span></strong><span>Empresas parceiras em Manaus</span></div>
+        <div class="numbers__item reveal"><strong>+<span data-count="15">15</span></strong><span>Empresas parceiras em Manaus</span></div>
       </div>
     </section>
 ${clientsCarousel()}

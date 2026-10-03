@@ -3,11 +3,11 @@
    Edite aqui os dados de contato: o site inteiro é atualizado.
    ========================================================= */
 const CONFIG = {
-  // Números de WhatsApp/telefone. O visitante escolhe com qual quer falar.
-  // number: DDI + DDD + número, só dígitos. label: nome que aparece na caixinha.
+  // Números de WhatsApp/telefone. number: DDI + DDD + número, só dígitos.
+  // Com um número só, os botões abrem o WhatsApp direto. Com dois ou mais,
+  // aparece uma caixinha para o visitante escolher (label = nome na caixinha).
   contacts: [
-    { label: "Comercial", number: "5592991360733", display: "(92) 99136-0733" },
-    { label: "Atendimento", number: "5592991360793", display: "(92) 99136-0793" }
+    { label: "Comercial", number: "5592991360733", display: "(92) 99136-0733" }
   ],
   // E-mail que recebe as propostas do formulário (envio direto, via FormSubmit)
   formEmail: "comercial@masfrefeicoes.com.br",
@@ -69,7 +69,12 @@ const CONFIG = {
   const setChooser = (text) => {
     $$(".wa-chooser__opt", chooser).forEach((a, i) => (a.href = waUrl(text, CONFIG.contacts[i].number)));
   };
+  const singleNumber = CONFIG.contacts.length === 1;
   const openChooser = (text = CONFIG.whatsappGreeting, title, sub) => {
+    if (singleNumber) {
+      window.open(waUrl(text), "_blank", "noopener");
+      return;
+    }
     clearTimeout(closeTimer);
     setChooser(text);
     $("[data-chooser-title]", chooser).textContent = title || "Fale com a MASF";
@@ -94,14 +99,14 @@ const CONFIG = {
   };
 
   // todos os botões de WhatsApp abrem a caixinha (em vez de ir direto para um número)
-  $$("[data-whatsapp-link]").forEach((a) =>
+  if (!singleNumber) $("[data-whatsapp-link]").forEach((a) =>
     a.addEventListener("click", (e) => {
       e.preventDefault();
       if (chooser.classList.contains("is-open") && a === waFloatBtn) closeChooser();
       else openChooser();
     })
   );
-  if (waFloatBtn) {
+  if (waFloatBtn && !singleNumber) {
     waFloatBtn.setAttribute("aria-haspopup", "dialog");
     waFloatBtn.setAttribute("aria-controls", "wa-chooser");
     if (window.matchMedia("(hover: hover)").matches) {
