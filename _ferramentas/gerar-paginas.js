@@ -43,7 +43,7 @@ const WA_SVG = '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13
 
 /* ---------------- Dados ---------------- */
 // Seção "Liderança" (foto e nome da CEO) em Quem somos. Mude para true quando tiver nome e foto.
-const SHOW_LEADER = false;
+const SHOW_LEADER = true;
 
 const NAV = [
   ["index.html", "Início"],
@@ -522,9 +522,7 @@ write("sobre.html", head("Quem somos | MASF Refeições", "Conheça a história 
 ${SHOW_LEADER ? `    <section class="section leader">
       <div class="container leader__grid">
         <figure class="leader__photo reveal">
-          <!-- TROQUE PELA FOTO DA CEO: salve como assets/img/ceo.jpg -->
-          <img src="assets/img/ceo.jpg" alt="CEO da MASF Refeições" loading="lazy" onerror="this.remove()">
-          <div class="leader__placeholder">${ic("users")}<span>Foto da CEO<br><small>assets/img/ceo.jpg</small></span></div>
+          <img src="assets/img/ceo.webp" alt="Maristelma Silva, CEO da MASF Refeições" width="1086" height="1448" loading="lazy">
         </figure>
         <div class="leader__text">
           <span class="kicker kicker--light reveal">Liderança</span>
@@ -532,8 +530,8 @@ ${SHOW_LEADER ? `    <section class="section leader">
             <p>Cada refeição que servimos carrega o compromisso de cuidar das pessoas. É assim desde o primeiro dia — e é assim que vamos continuar crescendo junto com os nossos clientes.</p>
           </blockquote>
           <div class="leader__sign reveal">
-            <strong>[Nome da CEO]</strong>
-            <span>CEO e fundadora · MASF Refeições</span>
+            <strong>Maristelma Silva</strong>
+            <span>CEO · MASF Refeições</span>
           </div>
         </div>
       </div>

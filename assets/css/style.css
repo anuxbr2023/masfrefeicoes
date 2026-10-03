@@ -1667,3 +1667,7 @@ svg.footer__steam path { stroke: rgba(255, 255, 255, .78); stroke-width: 10; }
 .form__done p { max-width: 380px; margin: 0 0 12px; color: var(--muted); }
 
 .wa-chooser__head small { display: block; line-height: 1.35; }
+
+/* Foto da CEO: enquadra rosto e ombros */
+.leader__photo { background: linear-gradient(180deg, #ffffff 0%, var(--wine-50) 100%); }
+.leader__photo img { object-position: 50% 20%; }
